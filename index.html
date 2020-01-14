@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="codes/register.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Usuários</h1>
+    </header>
+    <div id="cadastro">
+        <form action="">
+            <label for="Nome">Nome:</label>
+            <input type="text" id="Nome" name="Nome" placeholder="Nome completo" maxlength="28" size="28" autofocus>
+            <label for="Cpf">CPF:</label>
+            <input type="text" id="Cpf" name="Cpf" placeholder="000.000.000-00" maxlength="14" size="14"
+                oninput="mascaraCPF(this)">
+            <label for="Nota">Nota:</label>
+            <input type="text" id="Nota" name="Nota" placeholder="0 - 10" maxlength="4" size="4">
+            <input type="button" value="Cadastrar" onclick="cadastrarDados()">
+        </form>
+    </div>
+    <div id="resultado">
+        <table>
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>NOTA</th>
+                    <th>ALTERAR</th>
+                    <th>REMOVER</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Developed by &copy; <scan>Yago Neno</scan>
+        </p>
+        <p><a href="https://www.linkedin.com/in/yago-neno-31bb0916a/" target="_blank"><img src="images/linkedin.png"
+                    alt="linkedin"></a></p>
+    </footer>
+</body>
+
+</html>

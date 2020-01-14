@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+body {
+    background-image: url("../images/oldpaper.jpg");
+    font-family: 'Cinzel', serif;
+    font-size: 12pt;
+    color: burlywood;
+}
+
+header {
+    text-align: center;
+    font-size: 16px;
+    color: burlywood;
+    text-shadow: 2px 2px 4px black;
+    
+}
+
+#cadastro {
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 350px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0 12px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: lightgray;
+    transition: 1.5s;
+    font-size: 12pt;
+    font-family: 'Cinzel', serif;
+}
+
+
+input[type=button]{
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 16px;
+    background-color: transparent;
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    font-family: 'Cinzel', serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 1.5s, color 1.5s;
+}
+
+input[type=button]:hover{
+    background-color: deepskyblue;
+    color: white;
+}
+
+#resultado {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1350px;
+    margin: 50px auto 25px auto;
+    padding: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12pt;
+}
+
+th {
+    font-weight: bolder;
+    padding: 10px;
+    border-bottom: 1px outset burlywood;
+    
+}
+
+tr {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+td {
+    padding: 10px;
+}
+
+#btnAlt {
+    background-color: transparent;
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    padding: 8px 12px;
+    transition: background-color 1.5s, color 1.5s;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'Cinzel', serif;
+}
+
+#btnDel {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    padding: 8px 12px;
+    transition: background-color 1.5s, color 1.5s;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'Cinzel', serif;
+}
+
+#btnAlt:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+#btnDel:hover {
+    background-color: red;
+    color: white;
+}
+
+#inputNota {
+    width: 35%;
+    padding: 8px 12px;
+}
+
+#inputNota:hover {
+    width: 35%;
+    border-color: lightgreen;
+}
+
+#btnSalvar {
+    background-color: transparent;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    padding: 8px 12px;
+    transition: background-color 1.5s, color 1.5s;
+    font-weight: bolder;
+    font-family: 'Cinzel', serif;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btnSalvar:hover {
+    background-color: lightgreen;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: black;
+}
+
+footer scan {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
